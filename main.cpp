@@ -165,8 +165,8 @@ int main(int argc, char **argv)
                 int pred = predictions[i].item<int>();
                 std::string label = "Pred: " + std::to_string(pred);
                 std::string actual = "Actual: " + std::to_string(targets[i].item<int>());
-                cv::putText(img_mat, label, cv::Point(10, 20), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(120, 120, 255), 1);
-                cv::putText(img_mat, actual, cv::Point(10, 40), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(120, 120, 255), 1);
+                cv::putText(img_mat, label, cv::Point(10, 20), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255, 255, 255), 1);
+                cv::putText(img_mat, actual, cv::Point(10, 40), cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255, 255, 255), 1);
                 cv::imshow("MNIST Test Image", img_mat);
 
                 if (cv::waitKey(0) == 27)
